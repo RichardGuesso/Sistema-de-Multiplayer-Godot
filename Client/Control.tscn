@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://fontes/CALIBRIB.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://fontes/Myriad Pro Bold SemiExtended.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fontes/Beanstalker DEMO.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.172549, 0.164706, 0.196078, 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Control" type="CanvasLayer"]
+
+[node name="btn_loggoff" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -412.846
+margin_top = -51.293
+margin_right = -212.844
+margin_bottom = -11.292
+custom_fonts/font = SubResource( 1 )
+text = "Desconctar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_close" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -208.301
+margin_top = -51.3994
+margin_right = -8.29883
+margin_bottom = -11.4004
+custom_fonts/font = SubResource( 2 )
+text = "Sair"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="text_send" type="LineEdit" parent="."]
+margin_left = 12.7571
+margin_top = 728.698
+margin_right = 465.757
+margin_bottom = 756.698
+custom_fonts/font = SubResource( 3 )
+max_length = 60
+caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_send_text" type="Button" parent="."]
+margin_left = 467.757
+margin_top = 728.698
+margin_right = 554.757
+margin_bottom = 755.698
+custom_fonts/font = SubResource( 3 )
+text = "ENVIAR"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="multiples_texts" type="RichTextLabel" parent="."]
+margin_left = 12.7571
+margin_top = 521.698
+margin_right = 554.757
+margin_bottom = 728.698
+custom_styles/normal = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.141176, 0.141176, 0.141176, 1 )
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

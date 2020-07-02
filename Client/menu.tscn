@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fontes/Quicksand_Bold.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://open.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.172549, 0.164706, 0.196078, 0.341176 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color( 0.172549, 0.164706, 0.196078, 1 )
+
+[node name="menu" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_close" type="Button" parent="Control"]
+margin_left = 810.72
+margin_top = 713.259
+margin_right = 1010.72
+margin_bottom = 753.259
+focus_mode = 1
+custom_fonts/font = SubResource( 1 )
+text = "Sair"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="edit_text_send" type="LineEdit" parent="Control"]
+margin_left = 15.0
+margin_top = 716.0
+margin_right = 515.0
+margin_bottom = 751.0
+caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_logoff" type="Button" parent="Control"]
+margin_left = 599.094
+margin_top = 711.98
+margin_right = 803.094
+margin_bottom = 751.98
+focus_mode = 1
+custom_fonts/font = SubResource( 1 )
+text = "Desconectar-se"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_send_text" type="Button" parent="Control"]
+margin_left = 514.468
+margin_top = 716.3
+margin_right = 557.468
+margin_bottom = 751.3
+icon = ExtResource( 2 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="multiples_text" type="RichTextLabel" parent="Control"]
+margin_left = 15.0
+margin_top = 477.0
+margin_right = 557.0
+margin_bottom = 717.0
+custom_styles/normal = SubResource( 2 )
+bbcode_enabled = true
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
